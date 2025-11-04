@@ -14,7 +14,7 @@ body{
     background-color: #37364e;
     margin: 0;
     padding: 0;
-    max-width: 1800px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -84,7 +84,7 @@ main{
 
 
 #ice, #wwr, #portfolio, #aboutme {
-    width: 350px;
+    width: 100%;
     justify-self: center;
     align-self: center;
     background-color: #355d69;
@@ -116,8 +116,8 @@ main{
     grid-column: 4;
     grid-row: 1 / 5;
     background-color: #355d69;
-    height: 1000px;
-    width: 500px;
+    height: 100%;
+    width: 100%;
     text-align: center;
     justify-self: center;
     align-self: center;
