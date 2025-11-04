@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+:root{
+    --heading-font: "Share Tech", sans-serif;
+    background-color: black;
+}
+
+header{
+    background-color: #355d69;
+    text-align: center;
+}
+
+body{
+    background-color: #37364e;
+    margin: 0;
+    padding: 0;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+nav a{
+    font-family: var(--heading-font);
+    text-align: center;
+    color: #f4e9d4;
+    text-decoration: none;
+    padding: 35px;  
+    align-self: auto;
+    font-size: larger;
+
+}
+nav a:not(#logo_link):hover{
+    background-color: #9e8e91;
+    color: #37364e
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    grid-column: 3;
+    font-size: x-large;
+}
+
+#logo_link{
+    justify-self: center;
+    align-self: center;
+
+}
+.logo {
+    width: 200px;
+
+}
+
+main{
+    margin: 0 auto;
+    width: 100%;
+}
+
+#banner{
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 50px;
+    
+}
+
+#banner img {
+    width: 100%;
+    display: block;
+    border-bottom:solid 10px #f4e9d4;
+    border-top:solid 10px #f4e9d4;
+}
+
+#stuff{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1.2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    opacity: 1;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    gap: 40px;
+    width: 100%;
+    padding: 40px; /* Add padding around the entire grid */
+    box-sizing: border-box;
+}
+
+
+#ice, #wwr, #portfolio, #aboutme {
+    width: 350px;
+    justify-self: center;
+    align-self: center;
+    background-color: #355d69;
+    border-radius: 5%;
+    display: block;
+}
+
+#ice{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#wwr{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#portfolio{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#aboutme{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#links{
+    grid-column: 4;
+    grid-row: 1 / 5;
+    background-color: #355d69;
+    height: 1000px;
+    width: 500px;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    border-radius: 2%;
+}
+
+#stuff a {
+    position: relative; 
+    display: block;
+}
+
+#stuff a:hover img {
+    transform: scale(1.2);
+    opacity: 0.3;
+}
+
+#stuff a::after {
+    content: attr(data-text);
+    
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    
+    color: #f4e9d4; 
+    font-size: 1.5em; 
+    text-align: center;
+    
+    background-color: #355d69;
+    padding: 25px 100px; 
+    border-radius: 10px; 
+    
+    opacity: 0;
+    
+    transition: 0.5s ease;
+    width: max-content; /* Box fits content */
+    max-width: 150px; /* Don't exceed image width */
+}
+
+
+#stuff a:hover::after {
+    opacity: 1; /* Make text visible */
+}
+
+footer{
+    background-color: #355d69;
+    font-family: var(--paragraph-font); 
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top:solid 5px #f4e9d4;
+}
+
+#footer-name{
+    color: #f4e9d4;
+    background-color: #37364e;
+    font-size: large;
+    padding: 30px;
+    border-radius: 10px;
+}
