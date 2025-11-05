@@ -166,7 +166,6 @@ main{
     opacity: 0;
     
     transition: 0.5s ease;
-    width: max-content;
 }
 
 #stuff a:hover::after {
@@ -191,5 +190,6 @@ footer{
     padding: 30px;
     border-radius: 10px;
 }
+
 
 
