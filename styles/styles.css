@@ -26,12 +26,13 @@ nav a{
     padding: 35px;  
     align-self: auto;
     font-size: larger;
-
 }
+
 nav a:not(#logo_link):hover{
     background-color: #9e8e91;
     color: #37364e
 }
+
 nav{
     display: flex;
     justify-content: space-around;
@@ -42,11 +43,10 @@ nav{
 #logo_link{
     justify-self: center;
     align-self: center;
-
 }
+
 .logo {
     width: 200px;
-
 }
 
 main{
@@ -58,33 +58,44 @@ main{
     margin: 0 auto;
     width: 100%;
     margin-bottom: 50px;
-    
 }
 
 #banner img {
     width: 100%;
     display: block;
-    border-bottom:solid 10px #f4e9d4;
-    border-top:solid 10px #f4e9d4;
+    border-bottom: solid 10px #f4e9d4;
+    border-top: solid 10px #f4e9d4;
 }
 
 #stuff{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1.2fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    opacity: 1;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-    gap: 40px;
-    width: 100%;
-    padding: 40px; /* Add padding around the entire grid */
+    grid-template-columns: 1fr 1fr 1fr 2fr; /* Made column 4 much wider */
+    grid-template-rows: auto auto auto;
+    column-gap: 80px; /* More space between columns */
+    row-gap: 60px; /* Space between rows */
+    max-width: 1800px; /* Even wider */
+    margin: 0 auto;
+    padding: 40px 60px; /* More padding left/right */
     box-sizing: border-box;
 }
 
+#links{
+    grid-column: 4;
+    grid-row: 1 / 5;
+    background-color: #355d69;
+    min-height: 500px;
+    width: 100%;
+    max-width: 600px; /* Thicker links box */
+    text-align: center;
+    justify-self: end; /* Push it to the right side */
+    border-radius: 2%;
+    padding: 20px;
+}
 
 #ice, #wwr, #portfolio, #aboutme {
     width: 100%;
+    max-width: 350px;
+    height: auto;
     justify-self: center;
     align-self: center;
     background-color: #355d69;
@@ -112,17 +123,6 @@ main{
     grid-row: 2;
 }
 
-#links{
-    grid-column: 4;
-    grid-row: 1 / 5;
-    background-color: #355d69;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    justify-self: center;
-    align-self: center;
-    border-radius: 2%;
-}
 
 #stuff a {
     position: relative; 
@@ -153,13 +153,12 @@ main{
     opacity: 0;
     
     transition: 0.5s ease;
-    width: max-content; /* Box fits content */
-    max-width: 150px; /* Don't exceed image width */
+    width: max-content;
+    max-width: 150px;
 }
 
-
 #stuff a:hover::after {
-    opacity: 1; /* Make text visible */
+    opacity: 1;
 }
 
 footer{
@@ -170,7 +169,7 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-top:solid 5px #f4e9d4;
+    border-top: solid 5px #f4e9d4;
 }
 
 #footer-name{
