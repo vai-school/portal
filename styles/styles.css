@@ -16,7 +16,6 @@ body{
     padding: 0;
     margin: 0 auto;
     max-width: 100%;
-    padding: 0 1%;
 }
 
 nav a{
@@ -180,5 +179,6 @@ footer{
     padding: 30px;
     border-radius: 10px;
 }
+
 
 
