@@ -138,10 +138,11 @@ main{
 
 
 #stuff a {
-    position: relative; 
+    position: relative;
     display: block;
+    overflow: hidden;  /* <-- THIS is the key */
+    border-radius: 5%; /* optional, makes the hover keep rounded corners */
 }
-
 #stuff a:hover img {
     transform: scale(1.2);
     opacity: 0.3;
@@ -190,7 +191,3 @@ footer{
     padding: 30px;
     border-radius: 10px;
 }
-
-
-
-
