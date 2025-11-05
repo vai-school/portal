@@ -14,7 +14,7 @@ body{
     background-color: #37364e;
     margin: 0;
     padding: 0;
-    max-width: 90%;
+    max-width: 1800px;
     margin: 0 auto;
 }
 
@@ -179,3 +179,4 @@ footer{
     padding: 30px;
     border-radius: 10px;
 }
+
